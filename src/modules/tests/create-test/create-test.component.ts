@@ -18,6 +18,10 @@ export class CreateTestComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addQuestion() {
+    
+  }
+
   onSubmit() {
     console.log('model', this.model);
   }
