@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionComponent } from '../question.component';
 
 @Component({
   selector: 'app-multiple-choice-question',
@@ -10,7 +11,8 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class MultipleChoiceQuestionComponent implements OnInit {
+export class MultipleChoiceQuestionComponent implements OnInit, QuestionComponent {
+  data = {};
 
   constructor() { }
 

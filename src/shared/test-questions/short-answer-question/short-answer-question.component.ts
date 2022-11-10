@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionComponent } from '../question.component';
 
 @Component({
   selector: 'app-short-answer-question',
@@ -10,7 +11,8 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ShortAnswerQuestionComponent implements OnInit {
+export class ShortAnswerQuestionComponent implements OnInit, QuestionComponent {
+  data = {};
 
   constructor() { }
 
