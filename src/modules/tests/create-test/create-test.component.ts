@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-create-test',
-  template: `
-    <p>
-      create-test works!
-    </p>
-  `,
+  templateUrl: './create-test.component.html',
   styles: [
   ]
 })
