@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ShortAnswerQuestionComponent } from './short-answer-question/short-answer-question.component';
 import { MultipleChoiceQuestionComponent } from './multiple-choice-question/multiple-choice-question.component';
-import { TestBuilderDirective } from './test-builder.directive';
+import { TestHostDirective } from './test-host.directive';
 
 
 
@@ -10,7 +10,7 @@ import { TestBuilderDirective } from './test-builder.directive';
   declarations: [
     ShortAnswerQuestionComponent,
     MultipleChoiceQuestionComponent,
-    TestBuilderDirective,
+    TestHostDirective,
   ],
   imports: [
     CommonModule
@@ -18,7 +18,7 @@ import { TestBuilderDirective } from './test-builder.directive';
   exports: [
     ShortAnswerQuestionComponent,
     MultipleChoiceQuestionComponent,
-    TestBuilderDirective,
+    TestHostDirective,
   ],
 })
 export class TestQuestionsModule { }

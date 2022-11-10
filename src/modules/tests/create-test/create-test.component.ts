@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormlyFieldConfig } from '@ngx-formly/core';
-import { TestBuilderDirective } from 'src/shared/test-questions/test-builder.directive';
+import { TestHostDirective } from 'src/shared/test-questions/test-host.directive';
 
 @Component({
   selector: 'app-create-test',
@@ -14,7 +14,7 @@ export class CreateTestComponent implements OnInit {
 
   fields: FormlyFieldConfig[] = [];
 
-  @ViewChild(TestBuilderDirective, {static: true}) testBuilder!: TestBuilderDirective;
+  @ViewChild(TestHostDirective, {static: true}) testBuilder!: TestHostDirective;
 
   constructor() { }
 
