@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateTestComponent } from './create-test/create-test.component';
 import { EditTestComponent } from './edit-test/edit-test.component';
+import { ViewTestsComponent } from './view-tests/view-tests.component';
 
 const routes: Routes = [
   {
@@ -11,14 +12,19 @@ const routes: Routes = [
   },
   {
     path: 'edit',
-    component: EditTestComponent
+    component: EditTestComponent,
+  },
+  {
+    path: '',
+    component: ViewTestsComponent,
   }
 ]
 
 @NgModule({
   declarations: [
     CreateTestComponent,
-    EditTestComponent
+    EditTestComponent,
+    ViewTestsComponent
   ],
   imports: [
     CommonModule,
