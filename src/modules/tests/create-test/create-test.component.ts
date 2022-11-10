@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 
 @Component({
@@ -15,12 +15,9 @@ export class CreateTestComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  addQuestion() {
-
-  }
+  addQuestion() { }
 
   onSubmit() {
     console.log('model', this.model);
