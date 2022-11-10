@@ -9,7 +9,7 @@ import { FormlyFieldConfig } from '@ngx-formly/core';
 })
 export class CreateTestComponent implements OnInit {
 
-  model = {};
+  model = [];
 
   fields: FormlyFieldConfig[] = [];
 
@@ -19,7 +19,7 @@ export class CreateTestComponent implements OnInit {
   }
 
   addQuestion() {
-    
+
   }
 
   onSubmit() {
