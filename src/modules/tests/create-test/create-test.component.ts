@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormlyFieldConfig } from '@ngx-formly/core';
 
 @Component({
   selector: 'app-create-test',
@@ -8,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateTestComponent implements OnInit {
 
+  model = {};
+
+  fields: FormlyFieldConfig[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit() {
+    console.log('model', this.model);
   }
 
 }

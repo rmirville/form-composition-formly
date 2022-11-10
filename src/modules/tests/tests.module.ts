@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateTestComponent } from './create-test/create-test.component';
 import { EditTestComponent } from './edit-test/edit-test.component';
 import { ViewTestsComponent } from './view-tests/view-tests.component';
+import { FormlyModule } from '@ngx-formly/core';
 
 const routes: Routes = [
   {
@@ -24,11 +25,12 @@ const routes: Routes = [
   declarations: [
     CreateTestComponent,
     EditTestComponent,
-    ViewTestsComponent
+    ViewTestsComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    FormlyModule.forChild(),
   ]
 })
 export class TestsModule { }
