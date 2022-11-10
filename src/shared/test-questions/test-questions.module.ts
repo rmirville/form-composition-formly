@@ -18,6 +18,7 @@ import { QuestionDirective } from './question.directive';
   exports: [
     ShortAnswerQuestionComponent,
     MultipleChoiceQuestionComponent,
+    QuestionDirective,
   ],
 })
 export class TestQuestionsModule { }

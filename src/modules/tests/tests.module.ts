@@ -9,6 +9,7 @@ import { FormlyModule } from '@ngx-formly/core';
 import { SharedModule } from 'src/shared/shared.module';
 import { ShortAnswerQuestionComponent } from 'src/shared/test-questions/short-answer-question/short-answer-question.component';
 import { MultipleChoiceQuestionComponent } from 'src/shared/test-questions/multiple-choice-question/multiple-choice-question.component';
+import { QuestionComponent } from 'src/shared/test-questions/question.component';
 
 const routes: Routes = [
   {
@@ -39,8 +40,11 @@ const routes: Routes = [
     SharedModule,
   ],
   entryComponents: [
-    ShortAnswerQuestionComponent,
-    MultipleChoiceQuestionComponent,
+    [
+      ShortAnswerQuestionComponent,
+      MultipleChoiceQuestionComponent,
+      QuestionComponent,
+    ],
   ],
 })
 export class TestsModule { }
