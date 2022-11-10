@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateTestComponent } from './create-test/create-test.component';
 import { EditTestComponent } from './edit-test/edit-test.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    FormsModule,
     FormlyModule.forChild(),
   ]
 })
