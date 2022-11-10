@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormlyFieldConfig } from '@ngx-formly/core';
+import { ShortAnswerQuestionComponent } from 'src/shared/test-questions/short-answer-question/short-answer-question.component';
 import { TestHostDirective } from 'src/shared/test-questions/test-host.directive';
 
 @Component({
@@ -14,13 +15,18 @@ export class CreateTestComponent implements OnInit {
 
   fields: FormlyFieldConfig[] = [];
 
-  @ViewChild(TestHostDirective, {static: true}) testBuilder!: TestHostDirective;
+  @ViewChild(TestHostDirective, {static: true}) testHost!: TestHostDirective;
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.testHost.viewContainerRef.clear();
 
-  addQuestion() { }
+  }
+
+  addQuestion() {
+    this.testHost.viewContainerRef.createComponent<ShortAnswerQuestionComponent>(ShortAnswerQuestionComponent);
+  }
 
   onSubmit() {
     console.log('model', this.model);
