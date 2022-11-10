@@ -6,6 +6,9 @@ import { CreateTestComponent } from './create-test/create-test.component';
 import { EditTestComponent } from './edit-test/edit-test.component';
 import { ViewTestsComponent } from './view-tests/view-tests.component';
 import { FormlyModule } from '@ngx-formly/core';
+import { SharedModule } from 'src/shared/shared.module';
+import { ShortAnswerQuestionComponent } from 'src/shared/test-questions/short-answer-question/short-answer-question.component';
+import { MultipleChoiceQuestionComponent } from 'src/shared/test-questions/multiple-choice-question/multiple-choice-question.component';
 
 const routes: Routes = [
   {
@@ -33,6 +36,11 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     FormsModule,
     FormlyModule.forChild(),
-  ]
+    SharedModule,
+  ],
+  entryComponents: [
+    ShortAnswerQuestionComponent,
+    MultipleChoiceQuestionComponent,
+  ],
 })
 export class TestsModule { }
