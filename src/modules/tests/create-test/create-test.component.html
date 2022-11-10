@@ -1,5 +1,6 @@
 <h2>Create Test</h2>
-<button (click)="addQuestion()">Add Question</button>
 <form #createTestForm="ngForm">
+	<button (click)="addQuestion()">Add Question</button>
 	<formly-form [fields]="fields" [model]="model"></formly-form>
 </form>
+<ng-template appTestBuilder></ng-template>

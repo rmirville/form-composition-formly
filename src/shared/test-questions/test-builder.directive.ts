@@ -1,9 +1,9 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appQuestion]'
+  selector: '[appTestBuilder]'
 })
-export class QuestionDirective {
+export class TestBuilderDirective {
 
   constructor() { }
 
